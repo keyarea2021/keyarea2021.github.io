@@ -1,0 +1,337 @@
+
+// #bottomNav{
+
+
+// .quickNav {
+
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     height: 100vh;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: rgba(0, 0, 0, .4);
+//     opacity: 0;
+//     transition: opacity .4s ease;
+//     will-change: opacity;
+//   }
+
+//   &.active::before {
+//     opacity: 1;
+//   }
+
+//   &__items {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     background: white;
+//     box-shadow: 0 -1px 3px rgba(0, 0, 0, .05);
+//     z-index: 1;
+//   }
+
+//   &__item {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: .5em 0;
+//     text-decoration: none;
+//   }
+
+//   &__icon {
+//     margin: 0 0 .25em;
+//     width: 2em;
+//     height: 2em;
+//     background: black;
+//     border-radius: 100%;
+//     opacity: .4;
+//     transition: opacity .4s ease;
+//     will-change: opacity;
+//   }
+
+//   &__item.active &__icon {
+//     opacity: 1;
+//   }
+
+//   &__label {
+//     color: #222;
+//     font-size: .8em;
+//     transition: color .4s ease;
+//   }
+
+//   &__item.active &__label {
+//     background: #00;
+//   }
+
+//   &__menu {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     background: white;
+//     box-shadow: 0 -2px 3px rgba(0, 0, 0, .05);
+//     transform: translateY(10%);
+//     transition: transform .4s ease;
+//     will-change: transform;
+
+//     &.active {
+//       transform: translateY(-100%);
+//     }
+//   }
+
+//   &__link {
+//     display: block;
+//     padding: 1em;
+//     color: #222;
+//     text-decoration: none;
+//     border-bottom: 1px solid rgba(0, 0, 0, .05);
+//   }
+
+// }
+// }
+
+// body {
+//   background: #eee;
+// }
+
+
+
+#mainNav {
+  min-height: 56px;
+  background-color: transparent;
+
+
+
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .navbar-brand {
+    padding: .5rem 0;
+  }
+  .navbar-nav .nav-item {
+    &:hover {
+      color: fade(white, 100%);
+      color: white;
+      outline: none;
+      background-color: transparent;
+    }
+    &:active, &:focus {
+      outline: none;
+      // background-color: #161616;
+    }
+  }
+}
+
+
+
+
+
+
+/*  SP スマホ only  */
+@media screen and (max-width: 992px) {
+  #mainNav {
+
+//    .navbar-shrink{
+//     background: transparentize($darkblue, 0.5);効かない
+// }
+    .navbar-nav .border-top-item {
+      border-top: 2px solid $bluegray;
+    }
+    .navbar-nav .depth0 {
+      font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 1.4;
+      color: $white;
+    }
+    .navbar-nav .depth1 {
+      font-weight: normal;
+      font-size: 1rem;
+      line-height: 0.9;
+      color: $ghostwhite;
+    }
+
+    .navbar-nav .social .fab{
+      font-weight: normal;
+      font-size: 1.6rem;
+      line-height: 0.9;
+      color: $ghostwhite;
+    }
+
+    .navbar-nav .nav-language .nav-link{
+      font-weight: normal;
+      font-size: .9rem;
+      line-height: 0.9;
+      color: $ghostwhite;
+    }
+
+    .navbar-nav .nav-language .language-item{
+      font-weight: normal;
+      font-size: .9rem;
+      line-height: 0.9;
+      color: $ghostwhite;
+    }
+
+.language-item + .language-item::before{
+  content: "/";
+  margin-left: .2em;
+  margin-right: .2em;
+}
+
+}
+
+
+
+  }
+
+
+/*breakpoint and up - mega dropdown styles*/
+@media screen and (min-width: 992px) {
+  /*remove the padding from the navbar so the dropdown hover state is not broken*/
+
+
+    #mainNav {
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color :transparentize($darkblue, 0.8);
+
+
+    .nav-item {
+      padding: 0rem;
+      margin: 0 .25rem;
+    }
+    .dropdown {
+      position: static;
+    }
+
+
+
+
+    .dropdown-menu {
+      // width: 15rem;
+
+      /*  height of nav-item  */
+      top: 64px;
+      display: block;
+      visibility: hidden;
+      // opacity: 0.9;
+      transition: visibility 0s, opacity 0.3s linear;
+      // border:3px solid rgba(0,0,0,.15);
+      border: none;
+      background-color: transparentize($darkblue, 0.5);
+
+    }
+.dropdown-menu:before {
+  content: '';
+    background: inherit;
+opacity: 0.9;
+filter: blur(10px);
+
+}
+
+
+        .dropdown-menu-right {
+      width: 40rem;
+      height: 15rem;
+    }
+
+
+
+
+            .dropdown-menu-left {
+      width: 13rem;
+            height: 15rem;
+    }
+
+
+
+        .dropdown-menu .border-right-item {
+      border-right: 2px solid transparentize($darkblue, 0.5);
+    }
+
+    .dropdown-menu .border-bottom-item {
+      border-bottom: 0.25rem solid $primary;
+    }
+
+
+
+
+
+
+
+
+    .dropdown {
+      &:hover .dropdown-menu, .dropdown-menu:hover {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.3s linear;
+      }
+    }
+
+
+
+
+
+
+  }
+}
+  /*remove the padding from the nav-item and add some margin to give some breathing room on hovers*/
+  /* makes the dropdown full width  */
+  /* shows the dropdown menu on hover */
+  #mainNav {
+    transition: background-color 0.5s ease-in-out;
+    .nav-link {
+      transition: none;
+      padding: 1.2rem 1.5rem;
+      color: $white;
+      &:hover {
+        color: #fff;
+      }
+      &:active {
+        color: $white;
+      }
+    }
+    &.navbar-shrink .nav-link {
+      &:hover {
+        color: $white;
+      }
+      &:active {
+        color: #FFF;
+      }
+      &.active {
+        color: #FFF;
+        outline: none;
+        border-bottom: 0.25rem solid $primary;
+      }
+    }
+  }
+}
+
+/*  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+      background-color: transparent;
+      transition: background-color 0.3s ease-in-out; }
+
+
+ }*/

@@ -1,0 +1,17 @@
+.profile-section {
+  background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+
+  padding: 10rem 0;
+  .profile-text {
+    padding: 2rem;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .profile-section .profile-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid $primary;
+  }
+}
+

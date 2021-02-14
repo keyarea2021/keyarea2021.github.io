@@ -1,0 +1,465 @@
+
+#wrapper > .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212931;
+  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .2)} 75%,$black 99%), linear-gradient(to bottom, #{fade-out($black, .4)} 0%,transparent 17%,transparent), url('../images/img-profile/mv-img.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+      // background-attachment: scroll,scroll,scroll;
+      // z-index: -1;
+    }
+
+    #wrapper > .bg.fixed {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .about-section {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+
+
+      .about-wrapper{
+
+@media screen and (min-width: 992px) {
+        width: calc(100% - 4rem);
+        max-width: 72rem;
+        z-index: 2;
+      }
+      }
+h1{
+  color: #fff;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  visibility: visible;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 0.9;
+  padding: 0.5rem 1rem;
+
+/*  Tb PC  */
+@media screen and (min-width: 992px) {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 1rem 1.75rem;
+}
+}
+h6, h6 a{
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
+.img-bg{
+  background-image: url('../img/subheading.jpg');
+  background-size: cover;
+
+}
+
+
+
+.nav-item
+{
+  border: none;
+  color:#fff;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius:0;
+
+}
+
+.nav-item.active
+{
+    border: none;
+  color:#1e252d;
+  background:#fff;
+
+}
+
+
+.nav-item .nav-link
+{
+  border: none;
+  padding: 18px 25px;
+  color:#fff;
+  border-radius:0;
+}
+
+.nav-item .nav-link.active
+{
+  border: none;
+  padding: 18px 25px;
+  color:#1e252d;
+  border-radius:0;
+}
+
+
+
+.tab-content{
+  background: #fdfdfd;
+  line-height: 25px;
+ padding:30px 0;
+  }
+
+
+
+
+.history-tab{
+h4 {
+    font-weight: 800;
+  font-size: 14pt;
+  padding: auto auto 1em auto;
+}
+p {
+    text-align: justify;
+    font-weight: 400;
+  font-size: 10pt;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #b9fffd;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+}
+
+a:hover {
+    color: #54cccd;
+    text-decoration: underline;
+}
+
+button {
+    margin: 2em;
+    padding: 1em;
+}
+button:focus {
+    outline: none;
+    // outline: 5px auto -webkit-focus-ring-color;
+    -webkit-focus-ring-color: none;
+}
+
+button:hover,
+p > a:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.container{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.container > h2{
+  padding-bottom: 1.5em;
+}
+
+
+/** timeline box structure **/
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eee;
+    left: 50%;
+    margin-left: -1.5px;
+
+/*  SP スマホ only  */
+@media screen and (max-width: 768px) {
+
+}
+}
+
+.toggleCollapseAll,
+.tldate {
+    display: block;
+    width: 200px;
+    background: #54cccd;
+    border: 3px solid #b9fffd;
+    color: black;
+    margin: 0 auto;
+    padding: 0.5em 0;
+  font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.35);
+}
+
+.toggleCollapseAll{
+  margin: 3em auto;
+}
+.timeline li {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline li:before,
+.timeline li:after {
+    content: " ";
+    display: table;
+}
+.timeline li:after {
+    clear: both;
+}
+
+.timeline li:before,
+.timeline li:after {
+    content: " ";
+    display: table;
+}
+
+/** timeline panels **/
+
+.timeline li .timeline-panel {
+    width: 46%;
+    float: left;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    padding: 20px;
+    position: relative;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+/** panel arrows **/
+
+.timeline li .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline li .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+/** 以下三つは何のことだろう **/
+
+.timeline li .timeline-panel.noarrow:before,
+.timeline li .timeline-panel.noarrow:after {
+    top: 0;
+    right: 0;
+    display: none;
+    border: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+/** timeline circle icons **/
+
+.timeline li .tl-circ {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    text-align: center;
+    background: #54cccd;
+    color: #b9fffd;
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    margin-left: -16px;
+    border: 3px solid #b9fffd;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+}
+
+/** timeline content **/
+
+.tl-heading h4 {
+    margin-top: 1em;
+    margin: 0;
+    color: black;
+}
+
+.tl-body p,
+.tl-body ul {
+    margin-bottom: 0;
+    color: black;
+}
+
+.tl-body > p + p {
+    margin-top: 5px;
+}
+
+/** media queries **/
+@media (max-width: 991px) {
+    .timeline li .timeline-panel {
+        width: 44%;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .page-header h1 {
+        font-size: 1.8em;
+    }
+
+    ul.timeline:before {
+        left: 12px;
+    }
+
+    .tldate {
+        width: 140px;
+    }
+
+    ul.timeline li .timeline-panel {
+        width: calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
+        width: -webkit-calc(100% - 20px);
+    }
+
+    ul.timeline li .tl-circ {
+        top: 35px;
+        left: -11px;
+        margin-left: 0;
+        width: 15px;
+        height: 15px;
+
+    }
+    ul.timeline > li > .tldate {
+        margin: 0;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+
+    ul.timeline > li > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    ul.timeline > li > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+}
+
+
+
+}// /history-tab
+
+
+
+
+
+.background-tab{
+
+/*===== TABSET =====*/
+
+.tabset {
+  // border: solid 10px;
+  display: flex;
+  // height: 250px;
+  input[type="radio"]:checked + .tab-label {
+    border: none;
+    // border: 1px;
+  }
+  .tab-label {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px;
+    div {
+      display: block;
+      transform: rotate(-90deg);
+      height: 50px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      // vertical-align: bottom;
+    }
+    &:last-of-type {
+      border-bottom: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.tab-content {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
+  overflow: auto;
+  display: none;
+}
+
+.tabset input[type="radio"] {
+  display: none;
+  &:checked + * + .tab-content {
+    display: block;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.tabset label {
+  font-size: 2rem;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+}// /background-tab
+
+}// /about-section

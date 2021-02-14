@@ -1,0 +1,28 @@
+
+
+/*------------------------------------------------------------------
+[ mobile menu ]*/
+
+.main-menu-m > li > a {
+  padding: 4px 1px 9px 25px;
+}
+
+.sub-menu-m {
+  padding: 0px 50px 0px 35px;
+  display: block;
+}
+.sub-menu-m a{
+  display: block;
+  font-size: 13px;
+  padding: 3px;
+  /* padding: 5px 5px 5px 5px; */
+
+}
+
+.main-menu-m .sub-menu-m li {  
+  display: inline-block;
+}
+
+
+
+/*==================================================================

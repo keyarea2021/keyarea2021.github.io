@@ -1,0 +1,80 @@
+@import url('fonts/fontawesome-5.0.8/css/font-awesome.min.css');
+
+@import 'scss/variables.scss';
+
+@import 'scss/mixins.scss';
+@import 'scss/about.scss';
+
+
+@import 'scss/buttons.scss';
+
+
+@import 'scss/about.scss';
+@import 'scss/top.scss';
+
+
+
+@import 'scss/navbar.scss';
+@import 'scss/footer.scss';
+
+// index.html共通設定
+
+[class*=js-] {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Nunito';
+  letter-spacing: 0.0625em;
+}
+
+// a {
+//   color: $primary;
+//   &:focus,
+//   &:hover {
+//     text-decoration: none;
+//     color: darken($primary, 20%);
+//   }
+// }
+
+
+// a {
+//   color: $white;
+//   &:focus, &:hover {
+//     text-decoration: none;
+//     color: $white;
+//   }
+// }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.bg-black {
+  background-color: $black !important;
+}
+
+.bg-trueblack {
+  background-color: $trueblack !important;
+}
+
+.bg-primary {
+  background-color: transparentize($darkblue, 0.2) !important;
+}
+
+.text-primary {
+  color: $darkblue !important;
+}
+
+.dropshadow {
+  -webkit-filter: drop-shadow(3px 1px 3px rgba(0, 0, 0, 0.2));
+  -moz-filter: drop-shadow(3px 1px 3px rgba(0, 0, 0, 0.2));
+  -ms-filter: drop-shadow(3px 1px 3px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(3px 1px 3px rgba(0, 0, 0, 0.2));
+}
+
+footer {
+  padding: 5rem 0;
+}

@@ -1,0 +1,65 @@
+
+.notes-section {
+  padding: 10rem 0;
+  .featured-text {
+    padding: 2rem;
+  }
+}
+.notes-section .notes-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+/* tab-swiper */
+  .notes-section {
+
+.notes-card > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.notes-card > .row > .col-12 + .col-sm-6{
+  display: inline-block;
+  float: none;
+  height: 400px;
+  max-width:250px;
+}
+
+/* Decorations */
+.row > .col-12 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; width:90%; max-width:90%;}
+.col-sm-6:nth-child(3n+1) { background: #c69; }
+.col-sm-6:nth-child(3n+2) { background: #9c6; }
+.col-sm-6:nth-child(3n+3) { background: #69c; }
+  }
+
+
+@media (min-width: 992px) {
+  .notes-section .notes-text {
+    padding: 5rem;
+    hr {
+      border-color: $primary;
+      border-width: .25rem;
+      width: 30%;
+    }
+  }
+
+
+
+    .notes-section .project{
+  object-fit: cover;
+  height: 420px;
+  width: 85%;
+  width: auto;
+  margin: auto;
+  // background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+  }
+
+    .notes-section .notes-img {
+  object-fit: cover;
+  height: 420px;
+  width: 85%;
+  width: auto;
+
+  margin: auto;
+  }
+
+}

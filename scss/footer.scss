@@ -1,0 +1,130 @@
+/*Footer Style*/
+
+footer {
+  background-color: #141517;
+  float: left;
+  padding: 40px 0 20px;
+  width: 100%;
+  .heading-footer {
+    color: #d9d6d6;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  p {
+    color: #a0a3a4;
+    font-size: 14px;
+    a {
+      color: #fff;
+      font-size: 14px;
+    }
+    span {
+      color: #fff;
+    }
+  }
+  .footer-ul {
+    list-style-type: none;
+    margin-left: 2px;
+    padding-left: 0;
+    li {
+      font-size: 14px;
+      margin-bottom: 10px;
+      line-height: 13px;
+      a {
+        color: #a0a3a4;
+        transition: color 0.2s linear 0s, background 0.2s linear 0s;
+      }
+    }
+  }
+  .post p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    span {
+      color: #8f8f8f;
+      display: block;
+      font-size: 12px;
+    }
+  }
+  .social-icons i {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #141517;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 30px;
+  }
+  .footer-ul i {
+    margin-right: 10px;
+  }
+}
+
+/*footer .footer-ul p span {
+    display: block;
+    padding-top: 15px;
+
+}*/
+
+.copyright {
+  background-color: #000;
+  float: left;
+  min-height: 40px;
+  width: 100%;
+  p {
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding: 10px 0;
+    text-align: left;
+  }
+  a {
+    color: #fff;
+  }
+  .bottom_ul {
+    float: right;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+}
+
+.bottom_ul li {
+  float: left;
+  line-height: 40px;
+  a {
+    color: #fff;
+    font-size: 12px;
+  }
+  &::after {
+    color: #fff;
+    content: "/";
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  &:last-child::after {
+    content: "";
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .top-nav .menu-handle {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: auto;
+    i {
+      display: none;
+    }
+    .text-handle {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .admin-bar {
+    display: none;
+  }
+}
